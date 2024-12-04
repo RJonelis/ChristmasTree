@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 25px);
+    grid-template-rows: repeat(10, 25px);
+    gap: 2px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+.grid-item:hover {
+    transform: scale(1.2);
+}
+.solid {
+    background-color: #228B22; /* Green color for the tree */
+}
+.trunk {
+    background-color: #8B4513; /* Brown color for the trunk */
+}
+.transparent {
+    background-color: transparent;
+}
+.emoji {
+    font-size: 24px;
+}
